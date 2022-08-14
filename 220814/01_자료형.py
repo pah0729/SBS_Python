@@ -18,3 +18,40 @@
 a = 10.5
 print(type(a))
 print(int(a))
+
+# 예제
+# 1. 사용자한테 숫자를 입력 받고
+# 2. 사용자가 입력한 값의 10배를 출력
+
+b = input('값을 입력해주세요 : ')
+
+print(f'입력하신 값은 {b} 입니다')
+
+print(type(b))
+
+c = print('입력하신 값의 10배는 :',int(b) * 10,'입니다.' )
+
+print(type(c))
+
+print("1-1", "1-2", "1-3",end = "\n")
+print("1-1", "1-2", "1-3",sep = "")
+
+
+
+
+# 인덱싱, 슬라이싱
+name_1 = '박계현, 26세'
+print(name_1[:3])
+
+# split
+print(name_1.split(','))
+print(name_1.split(',')[0])
+print(name_1.split(',')[-1].strip()) #strip 공백 제거
+input('입력:')
+
+# string 포맷팅
+age = 26
+print('제 나이는 ', age, '살 입니다.')
+print('제 나이는 {}살 입니다.'.format(age)) # py3
+print('제 나이는 %s살 입니다.' %(age)) # py2
+print(f'제 나이는 {age}살 입니다.') # 최근
