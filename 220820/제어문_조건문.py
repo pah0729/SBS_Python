@@ -37,3 +37,13 @@ elif credit >= 60:
     print('D 입니다!')
 else:
     print('F 입니다!')
+
+# 응용 예제 2
+# 임의의 정수를 입력받은 뒤 3의 배수인지 아닌지 판별
+
+multiple_of_3 = int(input(print('정수를 입력하세요 >>> ')))
+
+if multiple_of_3%3 == 0:
+    print(multiple_of_3, '은/는 3의 배수입니다.', sep='')
+else:
+    print(f'{multiple_of_3}은/는 3의 배수가 아닙니다.')
