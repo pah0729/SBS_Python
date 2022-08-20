@@ -19,6 +19,8 @@ a_list.remove('첫번')
 print(a_list)
 a_list.pop()
 print(a_list)
+b_list = a_list.copy()
+print(b_list)
 # 1부터 10까지 출력
 # 1부터 100까지 더한값을 출력해보세요
 """
