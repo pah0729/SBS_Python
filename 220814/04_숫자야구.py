@@ -20,6 +20,7 @@ while is_right == 0: # 사용자 값
         print('3 스트라이크 0 아웃')
         print('정답:', num)
         is_right = 1
+        break
     else:
         for a in ans:
             if a in num:
