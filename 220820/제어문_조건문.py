@@ -60,10 +60,9 @@ else:
 # 응용 예제 4
 # 미세먼지 저감 활동의 일환으로 차량 2부제 실시
 # 차량번호가 짝수 -> 운행가능, 홀수 -> 운행 불가
-# ex) 237가1234??
+car_num = list(map(int, input('차량번호를 입력하세요 ex) 1234 >>> ')))
 
-car_num = int(input(print('차량번호를 입력하세요 >>> ')))
-if car_num[0::2]%2 ==0:
-    print(f'{car_num}은/는 오늘 운행가능입니다.')
+if car_num[-1]%2 == 0:
+    print('오늘 운행가능입니다.')
 else:
-    print(f'{car_num}은/는 오늘은 운행불가입니다.')
+    print('오늘은 운행불가입니다.')
