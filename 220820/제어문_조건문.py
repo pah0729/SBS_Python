@@ -1,4 +1,5 @@
 """
+- if - else
  if 조건식 :
     조건식의 결과가 True일 때 실행문
 
@@ -6,18 +7,33 @@ if 조건식:
     조건식의 결과가 True일 때 실행문
 else:
     조건식의 결과가 False일 때 실행문
+
+- if -elif
+if 조건식 1:
+    조건식 1의 결과가 True일 때 실행문
+elif 조건식2:
+    조건식 1의 결과가 False이고, 조건식 2의 결과가 True일 때 실행문
+else:
+    조건식 1, 2의 결과가 모두 False일 때 실행문
 """
 
-a = -2
+# 응용 예제 1
+# 점수를 입력받아서 학점을 출력하는 프로그램을 구현
+# 100~90 : A
+# 89~80 : B
+# 79~70 : C
+# 69~60 : D
+# 59~0 : F
 
-if a > 0:
-    print('양수')
-else:
-    print('음수')
+credit = int(input(print('점수를 입력하세요 >>> ')))
 
-#기본 예제
-age = int(input('몇 살입니까? >>> '))
-if age >= 20:
-    print('성인')
+if credit >= 90:
+    print('A 입니다!')
+elif credit >= 80:
+    print('B 입니다!')
+elif credit >= 70:
+    print('C 입니다!')
+elif credit >= 60:
+    print('D 입니다!')
 else:
-    print('미성년자')
+    print('F 입니다!')
