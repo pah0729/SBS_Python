@@ -43,9 +43,24 @@ while True:
 
 # 응용 예제 4
 # 0부터 9 사이의 정수를 입력 받아, 입력된 정수가 5개가 될 때까지
-입력 = int(input('0~9 사이 점수를 입력하세요 >>> '))
+num_li = [] # 입력 정수가 5개
+while True:
+    # 숫자 입력
+    num = int(input('0~9 사이 점수를 입력하세요 >>> '))
+    # 중복 확인
+    if num in num_li:
+        # 중복이면 점프
+        continue
+    else:
+        # 숫자리스트에 추가
+        num_li.append(num)
 
-print('입력된 값은 {}입니다.')
+    if len(num_li) == 5:
+        break
+    # 리스트의 길이가 5면 빠져나가기
+
+print('모두 입력되었습니다.')
+print('입력된 값은 {}입니다.'.format(num_li))
 
 
 # 응용 예제 5
